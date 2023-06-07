@@ -1,0 +1,260 @@
+/* ---------------------------------------- MARGEN ---------------------------------------- */
+
+/* La nomenclatura de las clases para el margen significa:
+Custom Margin T(el lado al que se aplicara el margen)y el numero indica el valor */
+.cm-0{  margin:   0px; }
+.cm-1{  margin:  10px; }
+.cm-2{  margin:  20px; }
+.cm-3{  margin:  30px; }
+.cm-4{  margin:  40px; }
+.cm-5{  margin:  50px; }
+.cm-6{  margin:  60px; }
+.cm-7{  margin:  70px; }
+.cm-8{  margin:  80px; }
+.cm-9{  margin:  90px; }
+.cm-10{ margin: 100px; }
+
+/* Custom Margin Top */
+.cmt-0{  margin-top:   0px; }
+.cmt-1{  margin-top:  10px; }
+.cmt-2{  margin-top:  20px; }
+.cmt-3{  margin-top:  30px; }
+.cmt-4{  margin-top:  40px; }
+.cmt-5{  margin-top:  50px; }
+.cmt-6{  margin-top:  60px; }
+.cmt-7{  margin-top:  70px; }
+.cmt-8{  margin-top:  80px; }
+.cmt-9{  margin-top:  90px; }
+.cmt-10{ margin-top: 100px; }
+
+/* Custom Margin Right */
+.cmr-0{  margin-right:   0px; }
+.cmr-1{  margin-right:  10px; }
+.cmr-2{  margin-right:  20px; }
+.cmr-3{  margin-right:  30px; }
+.cmr-4{  margin-right:  40px; }
+.cmr-5{  margin-right:  50px; }
+.cmr-6{  margin-right:  60px; }
+.cmr-7{  margin-right:  70px; }
+.cmr-8{  margin-right:  80px; }
+.cmr-9{  margin-right:  90px; }
+.cmr-10{ margin-right: 100px; }
+
+/* Custom Margin Bottom */
+.cmb-0{  margin-bottom:   0px; }
+.cmb-1{  margin-bottom:  10px; }
+.cmb-2{  margin-bottom:  20px; }
+.cmb-3{  margin-bottom:  30px; }
+.cmb-4{  margin-bottom:  40px; }
+.cmb-5{  margin-bottom:  50px; }
+.cmb-6{  margin-bottom:  60px; }
+.cmb-7{  margin-bottom:  70px; }
+.cmb-8{  margin-bottom:  80px; }
+.cmb-9{  margin-bottom:  90px; }
+.cmb-10{ margin-bottom: 100px; }
+
+/* Custom Margin Left */
+.cml-0{  margin-left:   0px; }
+.cml-1{  margin-left:  10px; }
+.cml-2{  margin-left:  20px; }
+.cml-3{  margin-left:  30px; }
+.cml-4{  margin-left:  40px; }
+.cml-5{  margin-left:  50px; }
+.cml-6{  margin-left:  60px; }
+.cml-7{  margin-left:  70px; }
+.cml-8{  margin-left:  80px; }
+.cml-9{  margin-left:  90px; }
+.cml-10{ margin-left: 100px; }
+
+/* Custom Margin en el eje X */
+.cmx-0{  margin-left:   0px; margin-right:   0px; }
+.cmx-1{  margin-left:  10px; margin-right:  10px; }
+.cmx-2{  margin-left:  20px; margin-right:  20px; }
+.cmx-3{  margin-left:  30px; margin-right:  30px; }
+.cmx-4{  margin-left:  40px; margin-right:  40px; }
+.cmx-5{  margin-left:  50px; margin-right:  50px; }
+.cmx-6{  margin-left:  60px; margin-right:  60px; }
+.cmx-7{  margin-left:  70px; margin-right:  70px; }
+.cmx-8{  margin-left:  80px; margin-right:  80px; }
+.cmx-9{  margin-left:  90px; margin-right:  90px; }
+.cmx-10{ margin-left: 100px; margin-right: 100px; }
+
+/* Custom Margin en el eje X */
+.cmy-0{  margin-top:   0px; margin-bottom:   0px; }
+.cmy-1{  margin-top:  10px; margin-bottom:  10px; }
+.cmy-2{  margin-top:  20px; margin-bottom:  20px; }
+.cmy-3{  margin-top:  30px; margin-bottom:  30px; }
+.cmy-4{  margin-top:  40px; margin-bottom:  40px; }
+.cmy-5{  margin-top:  50px; margin-bottom:  50px; }
+.cmy-6{  margin-top:  60px; margin-bottom:  60px; }
+.cmy-7{  margin-top:  70px; margin-bottom:  70px; }
+.cmy-8{  margin-top:  80px; margin-bottom:  80px; }
+.cmy-9{  margin-top:  90px; margin-bottom:  90px; }
+.cmy-10{ margin-top: 100px; margin-bottom: 100px; }
+
+/* ---------------------------------------- PADDING ---------------------------------------- */
+
+/* La nomenclatura de las clases para el padding significa:
+Custom Padding T(el lado al que se aplicara el padding)y el numero indica el valor */
+.cp-0{  padding:   0px; }
+.cp-1{  padding:  10px; }
+.cp-2{  padding:  20px; }
+.cp-3{  padding:  30px; }
+.cp-4{  padding:  40px; }
+.cp-5{  padding:  50px; }
+.cp-6{  padding:  60px; }
+.cp-7{  padding:  70px; }
+.cp-8{  padding:  80px; }
+.cp-9{  padding:  90px; }
+.cp-10{ padding: 100px; }
+
+/* Custom padding Top */
+.cpt-0{  padding-top:   0px; }
+.cpt-1{  padding-top:  10px; }
+.cpt-2{  padding-top:  20px; }
+.cpt-3{  padding-top:  30px; }
+.cpt-4{  padding-top:  40px; }
+.cpt-5{  padding-top:  50px; }
+.cpt-6{  padding-top:  60px; }
+.cpt-7{  padding-top:  70px; }
+.cpt-8{  padding-top:  80px; }
+.cpt-9{  padding-top:  90px; }
+.cpt-10{ padding-top: 100px; }
+
+/* Custom padding Right */
+.cpr-0{  padding-right:   0px; }
+.cpr-1{  padding-right:  10px; }
+.cpr-2{  padding-right:  20px; }
+.cpr-3{  padding-right:  30px; }
+.cpr-4{  padding-right:  40px; }
+.cpr-5{  padding-right:  50px; }
+.cpr-6{  padding-right:  60px; }
+.cpr-7{  padding-right:  70px; }
+.cpr-8{  padding-right:  80px; }
+.cpr-9{  padding-right:  90px; }
+.cpr-10{ padding-right: 100px; }
+
+/* Custom padding Bottom */
+.cpb-0{  padding-bottom:   0px; }
+.cpb-1{  padding-bottom:  10px; }
+.cpb-2{  padding-bottom:  20px; }
+.cpb-3{  padding-bottom:  30px; }
+.cpb-4{  padding-bottom:  40px; }
+.cpb-5{  padding-bottom:  50px; }
+.cpb-6{  padding-bottom:  60px; }
+.cpb-7{  padding-bottom:  70px; }
+.cpb-8{  padding-bottom:  80px; }
+.cpb-9{  padding-bottom:  90px; }
+.cpb-10{ padding-bottom: 100px; }
+
+/* Custom padding Left */
+.cpl-0{  padding-left:   0px; }
+.cpl-1{  padding-left:  10px; }
+.cpl-2{  padding-left:  20px; }
+.cpl-3{  padding-left:  30px; }
+.cpl-4{  padding-left:  40px; }
+.cpl-5{  padding-left:  50px; }
+.cpl-6{  padding-left:  60px; }
+.cpl-7{  padding-left:  70px; }
+.cpl-8{  padding-left:  80px; }
+.cpl-9{  padding-left:  90px; }
+.cpl-10{ padding-left: 100px; }
+
+/* Custom padding en el eje X */
+.cpx-0{  padding-left:   0px; padding-right:   0px; }
+.cpx-1{  padding-left:  10px; padding-right:  10px; }
+.cpx-2{  padding-left:  20px; padding-right:  20px; }
+.cpx-3{  padding-left:  30px; padding-right:  30px; }
+.cpx-4{  padding-left:  40px; padding-right:  40px; }
+.cpx-5{  padding-left:  50px; padding-right:  50px; }
+.cpx-6{  padding-left:  60px; padding-right:  60px; }
+.cpx-7{  padding-left:  70px; padding-right:  70px; }
+.cpx-8{  padding-left:  80px; padding-right:  80px; }
+.cpx-9{  padding-left:  90px; padding-right:  90px; }
+.cpx-10{ padding-left: 100px; padding-right: 100px; }
+
+/* Custom padding in Y edge */
+.cpy-0{  padding-top:   0px; padding-bottom:   0px; }
+.cpy-1{  padding-top:  10px; padding-bottom:  10px; }
+.cpy-2{  padding-top:  20px; padding-bottom:  20px; }
+.cpy-3{  padding-top:  30px; padding-bottom:  30px; }
+.cpy-4{  padding-top:  40px; padding-bottom:  40px; }
+.cpy-5{  padding-top:  50px; padding-bottom:  50px; }
+.cpy-6{  padding-top:  60px; padding-bottom:  60px; }
+.cpy-7{  padding-top:  70px; padding-bottom:  70px; }
+.cpy-8{  padding-top:  80px; padding-bottom:  80px; }
+.cpy-9{  padding-top:  90px; padding-bottom:  90px; }
+.cpy-10{ padding-top: 100px; padding-bottom: 100px; }
+
+/* ---------------------------------------- ALIGN ---------------------------------------- */
+
+.align-x{ margin-left: auto; margin-right: auto; } /* Centers elements in x edge */
+
+
+/* ---------------------------------------- SIZE ---------------------------------------- */
+
+/* Letter "w" is a reduction of height, and the number means the size */
+.w-0 { width:    0px; }
+.w-1 { width:  100px; }
+.w-2 { width:  200px; }
+.w-3 { width:  300px; }
+.w-4 { width:  400px; }
+.w-5 { width:  500px; }
+.w-6 { width:  600px; }
+.w-7 { width:  700px; }
+.w-8 { width:  800px; }
+.w-9 { width:  900px; }
+.w-10{ width: 1000px; }
+.w-11{ width: 1100px; }
+.w-12{ width: 1200px; }
+.w-13{ width: 1300px; }
+.w-14{ width: 1400px; }
+.w-15{ width: 1500px; }
+.w-16{ width: 1600px; }
+.w-17{ width: 1700px; }
+.w-18{ width: 1800px; }
+.w-19{ width: 1900px; }
+.w-20{ width: 2000px; }
+.w-21{ width: 2100px; }
+.w-22{ width: 2200px; }
+.w-23{ width: 2300px; }
+.w-24{ width: 2400px; }
+.w-25{ width: 2500px; }
+.w-26{ width: 2600px; }
+.w-27{ width: 2700px; }
+.w-28{ width: 2800px; }
+.w-29{ width: 2900px; }
+.w-30{ width: 3000px; }
+
+/* Letter "h" is a reduction of height, and the number means the size */
+.h-0 { height:    0px; }
+.h-1 { height:  100px; }
+.h-2 { height:  200px; }
+.h-3 { height:  300px; }
+.h-4 { height:  400px; }
+.h-5 { height:  500px; }
+.h-6 { height:  600px; }
+.h-7 { height:  700px; }
+.h-8 { height:  800px; }
+.h-9 { height:  900px; }
+.h-10{ height: 1000px; }
+.h-11{ height: 1100px; }
+.h-12{ height: 1200px; }
+.h-13{ height: 1300px; }
+.h-14{ height: 1400px; }
+.h-15{ height: 1500px; }
+.h-16{ height: 1600px; }
+.h-17{ height: 1700px; }
+.h-18{ height: 1800px; }
+.h-19{ height: 1900px; }
+.h-20{ height: 2000px; }
+.h-21{ height: 2100px; }
+.h-22{ height: 2200px; }
+.h-23{ height: 2300px; }
+.h-24{ height: 2400px; }
+.h-25{ height: 2500px; }
+.h-26{ height: 2600px; }
+.h-27{ height: 2700px; }
+.h-28{ height: 2800px; }
+.h-29{ height: 2900px; }
+.h-30{ height: 3000px; }
