@@ -1,5 +1,38 @@
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(245, 245, 250);
+    font-family: 'Lato', sans-serif;
+}
+
+.choose-container {
+    background-color: white;
+    padding: 30px;
+    width: 70%;
+}
+
+.user-select-button {
+    display: flex;
+    background-color: rgb(0, 130, 255);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-container {
@@ -7,7 +40,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    width: 30%;
+    width: 350px;
     padding: 30px;
     background-color: white;
 }
@@ -20,13 +53,64 @@ body {
     align-self: center;
 }
 
-
 .form-container input {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
     width: 90%;
+    background-color: #f0f0f5;
+    border: 1px solid white;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container input:focus {
+    background-color: white;
+    border: 1px solid rgb(0, 130, 255);
+    box-shadow: 0px 0px 3px rgb(0, 130, 255);
 }
 
 .form-container label {
+    margin-top: 10px;
+}
+
+.form-accept-button {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 130, 255);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-accept-button:hover {
+    cursor: pointer;
+    background-color: rgb(109, 185, 255);
+    color: white;
+}
+
+.form-cancel-button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 132, 255);
+    color: rgb(0, 132, 255);
+    background-color: #ffffff;
+}
+
+.form-cancel-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(0, 130, 255);
+}
+
+@media screen and (max-width: 576px) {
+    .form-container {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 70%;
+        /* Adjust width to 100% on XS breakpoint */
+    }
 }
