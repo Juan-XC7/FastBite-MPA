@@ -1,21 +1,20 @@
 <body>
     <form action="" method="POST" class="form-container align-x">
-        <h1>Login</h1>
+        <h1> Login </h1>
 
         <label for="email">Email</label>
-        <input type="email">
+        <input name="email" type="email">
+
         <label for="password">Password</label>
-        <input type="password">
-        <label for="password-confirmation">Confirm your password</label>
-        <input type="password">
+        <input name="password" type="password">
 
-        <button class="form-accept-button">
-            Continue
-        </button>
+        <label for="passwordConfirmation">Confirm your password</label>
+        <input name="passwordConfirmation" type="password">
 
-        <button class="form-cancel-button">
-            Cancel
-        </button>
+        <p>{{loginErrors}}</p>
+
+        <button type="submit" class="form-accept-button"> Continue </button>
+        <button type="button" onclick="homeRedirect()" class="form-cancel-button"> Cancel </button>
 
     </form>
 </body>
