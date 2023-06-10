@@ -1,6 +1,21 @@
 <body>
-    <form action="" class="form-container align-x">
+    <form action="" method="POST" class="form-container align-x cmb-4">
         <h1> Register </h1>
+
+        <label for="first name">First name</label>
+        <input name="first_name" type="text">
+
+        <label for="last name">Last name</label>
+        <input name="last_name" type="text">
+
+        <label for="Phone number">Phone number</label>
+        <input name="phone_number" type="number">
+
+        <label for="Role">Role</label>
+        <input name="role" type="text">
+
+        <label for="Status">Status</label>
+        <input name="status" type="text">
 
         <label for="email">Email</label>
         <input name="email" type="email">
@@ -11,7 +26,7 @@
         <label for="passwordConfirmation">Confirm your password</label>
         <input name="passwordConfirmation" type="password">
 
-        <p>{{loginErrors}}</p>
+        <p>{{passwordStatus}}</p>
 
         <button type="submit" class="form-accept-button"> Continue </button>
         <button type="button" onclick="homeRedirect()" class="form-cancel-button"> Cancel </button>

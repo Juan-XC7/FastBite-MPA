@@ -15,7 +15,7 @@ function validatePassword(password, passwordConfirmation) {
 
     if (!isValidPassword) {
         const loginErrors = "invalid password";
-        console.log(loginErrors);
+        console.log(loginErrors + '1');
         return loginErrors;
     }
 
@@ -33,16 +33,12 @@ function storeUser(req, res) {
     const passwordStatus = validatePassword(data.password, data.passwordConfirmation);
 
     if (passwordStatus !== true) {
-        res.render('authentication/register.hbs', { passwordStatus });
         return;
     }
 
     bcrypt.hash(data.password, 12).then(hash => {
         delete data.passwordConfirmation; // Delete the passwordConfirmation property
         data.password = hash;
-        console.log(data + 'data');
-        console.log(data.password + 'data password');
-
     });
 
     req.getConnection((err, connection) => {
@@ -63,3 +59,5 @@ module.exports = {
     loginErrors,
     validatePassword,
 }
+
+res.render('authentication/register.hbs', { passwordStatus });
