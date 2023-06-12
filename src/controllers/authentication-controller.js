@@ -1,11 +1,11 @@
 const bcrypt = require('bcrypt');
 const loginErrors = ""
 
-function login(req, res) {
+function renderLogin(req, res) {
     res.render('authentication/login.hbs');
 }
 
-function register(req, res) {
+function renderRegister(req, res) {
     res.render('authentication/register.hbs');
 }
 
@@ -57,8 +57,8 @@ function storeUser(req, res) {
 }
 
 module.exports = {
-    login,
-    register,
+    renderLogin,
+    renderRegister,
     storeUser,
     loginErrors,
     validatePassword,
