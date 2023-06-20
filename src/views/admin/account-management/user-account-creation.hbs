@@ -1,3 +1,39 @@
 <body>
-    <h1> Here you can create a new worker account </h1>
+    <form action="" method="POST" class="form-container align-x cmb-4">
+        <h1> New user </h1>
+
+        <label for="first name">First name</label>
+        <input required name="first_name" type="text">
+
+        <label for="last name">Last name</label>
+        <input required name="last_name" type="text">
+
+        <label for="Phone number">Phone number</label>
+        <input required name="phone_number" type="number">
+
+        <label for="Role">Role</label>
+        <select required name="role" id="">
+            <option value="admin"> admin </option>
+            <option value="user"> user </option>
+            <option value="worker"> worker </option>
+        </select>
+
+        <label for="Status">Status</label>
+        <input required name="status" type="number">
+
+        <label for="email">Email</label>
+        <input required name="email" type="email">
+
+        <label for="password">Password</label>
+        <input required name="password" type="password">
+
+        <label for="passwordConfirmation">Confirm password</label>
+        <input required name="passwordConfirmation" type="password">
+
+        <p>{{loginErrors}}</p>
+
+        <button type="submit" class="form-accept-button"> Continue </button>
+        <button type="button" onclick="homeRedirect()" class="form-cancel-button"> Cancel </button>
+
+    </form>
 </body>

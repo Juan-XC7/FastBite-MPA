@@ -29,32 +29,39 @@ function validatePassword(password, passwordConfirmation) {
 }
 
 function storeUser(req, res) {
-    const data = req.body
-    const passwordStatus = validatePassword(data.password, data.passwordConfirmation);
+    const data = req.body;
+    const isValidPassword = validatePassword(data.password, data.passwordConfirmation);
+    const loginErrors = validatePassword(data.password, data.passwordConfirmation);
 
-    if (passwordStatus !== true) {
-        res.render('authentication/register.hbs', { passwordStatus });
+    if (isValidPassword !== true) {
+        res.render('authentication/register.hbs', { loginErrors });
         return;
     }
 
     bcrypt.hash(data.password, 12).then(hash => {
         delete data.passwordConfirmation; // Delete the passwordConfirmation property
         data.password = hash;
-        console.log(data + 'data');
-        console.log(data.password + 'data password');
 
+        req.getConnection((err, connection) => {
+            delete data.passwordConfirmation;
+            console.log(data);
+            connection.query('INSERT INTO users SET ?', [ data ], (err, rows) => {
+                res.redirect('/');
+            });
+        });
+        console.log('successful registration');
     });
+}
 
+
+function recoverData(req, res) {
     req.getConnection((err, connection) => {
-        delete data.passwordConfirmation;
-        console.log(data);
-        connection.query('INSERT INTO users SET ?', [ data ], (err, rows) => {
-            res.redirect('/register');
+        connection.query('SELECT * FROM users', (err, rows) => {
+            console.log(connection);
         });
     });
-
-    console.log('successful registration')
 }
+
 
 module.exports = {
     renderLogin,
@@ -62,4 +69,5 @@ module.exports = {
     storeUser,
     loginErrors,
     validatePassword,
+    recoverData,
 }

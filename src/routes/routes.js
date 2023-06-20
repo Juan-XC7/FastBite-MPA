@@ -10,7 +10,7 @@ const panelController = require('../controllers/panel-controller.js');
 
 router.get('/login', authenticationController.renderLogin);
 router.get('/register', authenticationController.renderRegister);
-router.post('/register', authenticationController.storeUser);
+router.post('/account-creation', authenticationController.storeUser);
 
 router.get('/', homeController.home);
 

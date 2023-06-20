@@ -38,6 +38,15 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('home');
+
+    pool.query('SELECT * FROM users', (error, results) => {
+        if (error) {
+            console.error('Error retrieving data from MySQL:', error);
+            res.status(500).send('Error retrieving data from MySQL');
+            return;
+        }
+        res.render('index', { users: results });
+    });
 });
 
 app.listen(app.get('port'), () => {
