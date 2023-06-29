@@ -1,0 +1,30 @@
+<body>
+    <div class="container cp-5 align-x cmb-10">
+        <h1> Account management panel </h1>
+        <hr>
+
+        <table class="table align-x">
+
+            <tbody>
+                {{#each users}}
+                    <tr>
+                        <td> photo </td>
+                        <td>
+                            <h3 class="ta-l"> {{first_name}} {{last_name}} </h3>
+                            <p  class="ta-l">  {{role}}       </p>
+                        </td>
+                        <td>
+                            <p  class="ta-l"> {{email}} </p>
+                        </td>
+                        <td> {{status}} </td>
+                        <td>
+                            <button> Edit </button>
+                            <button> Delete </button>
+                        </td>
+                    </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+</body>

@@ -1,0 +1,10 @@
+this is my structure:
+
+/controller
+|-- /crud_controller
+|-- |-- createController.js
+|-- authenticationController.js (this file contains validatePassword() function)
+
+note: this "|--" represent a identation
+
+im trying to use the alidatePassword() function in createController.js in order to create a new account how can i do it

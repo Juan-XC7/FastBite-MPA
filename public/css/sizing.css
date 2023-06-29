@@ -258,3 +258,17 @@ Custom Padding T(el lado al que se aplicara el padding)y el numero indica el val
 .h-28{ height: 2800px; }
 .h-29{ height: 2900px; }
 .h-30{ height: 3000px; }
+
+/* Text align */
+
+.ta-l{ text-align: left;   }
+.ta-c{ text-align: center; }
+.ta-r{ text-align: right;  }
+
+.tj-l{ text-justify: left;   }
+.tj-c{ text-justify: center; }
+.tj-r{ text-justify: right;  }
+
+.tl{ text-align: left;   text-justify: left;   }
+.tc{ text-align: center; text-justify: center; }
+.tr{ text-align: right;  text-justify: right;  }

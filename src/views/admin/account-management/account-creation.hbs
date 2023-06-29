@@ -9,7 +9,8 @@
         <input required name="last_name" type="text">
 
         <label for="Phone number">Phone number</label>
-        <input required name="phone_number" type="number">
+        <input required name="phone_number" type="number" minlength="10" minlength="10">
+        
 
         <label for="Role">Role</label>
         <select required name="role" id="">
@@ -19,7 +20,7 @@
         </select>
 
         <label for="Status">Status</label>
-        <input required name="status" type="number">
+        <input required name="status" type="number" min="0">
 
         <label for="email">Email</label>
         <input required name="email" type="email">

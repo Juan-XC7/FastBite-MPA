@@ -1,4 +1,12 @@
 <body>
-    <h1> This space displays some management tools </h1>
-    <h1> This space displays existing products </h1>
+    <div class="flex-row">
+        {{#each products}}
+            <div class="flex-column w-4 container">
+                <h3> {{product_name}} </h3>
+                <p> {{product_description}} </p>
+                <p> $ {{product_cost}} </p>
+                <button class="form-accept-button"> Edit </button>
+            </div>
+        {{/each}}
+    </div>    
 </body>

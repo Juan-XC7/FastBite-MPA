@@ -1,3 +1,61 @@
+<title> create product </title>
+
 <body>
-    <h1> Here you can create a new product </h1>
+
+    <div class="form-container align-x ta-c cpb-0">
+        <h1 class="ta-c"> Create new product </h1>
+    </div>
+
+    <form action="" method="POST" class="form-container align-x">
+
+        <label for="product_type">Product Type</label>
+        <select name="product_type" id="product_type" required>
+            <option value="">Select a product type</option>
+            <option value="">Fabricated</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="product_name">Product Name</label>
+        <input required name="product_name" type="text">
+
+        <label for="product_description">Product Description</label>
+        <textarea required name="product_description"></textarea>
+
+        <label for="product_cost">Cost</label>
+        <input required name="product_cost" type="number" min="0" max="1000">
+
+        <label for="product_price">Price</label>
+        <input required name="product_price" type="number" min="0" max="1000">
+
+        <label for="product_unit">Sell Unit</label>
+        <select name="product_unit" id="product_unit" required>
+            <option value="">Select a sell unit</option>
+            <option value="">Kilograms</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="product_stock">Stock</label>
+        <input name="product_stock" type="number">
+
+        <input hidden name="isActive" type="number" value="1" min="0">
+
+        <button type="submit" class="form-accept-button"> Continue </button>
+        <button type="button" onclick="homeRedirect()" class="form-cancel-button"> Cancel </button>
+
+    </form>
+
+    <!-- Confirmation screen -->
+
+    <div class="confirmation-container" id="confirmationContainer">
+        <div class="floating-screen form-container center-confirmation cmb-5">
+            <h1> Confirmation </h1>
+            <p class="ta-c">The product was registered succesfully</p>
+            <button type="submit" onclick="confirmAction()" class="form-accept-danger-button"> Ok </button>
+            <br>
+        </div>
+    </div>
+
+
 </body>
+
+</html>

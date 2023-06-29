@@ -1,32 +1,25 @@
 const express = require('express');
 const router = express.Router()
-const authenticationController = require('../controllers/authentication-controller.js');
-const homeController = require('../controllers/home-controller.js');
 
-const accountController = require('../controllers/account-controller.js');
-const productController = require('../controllers/product-controller.js');
-const panelController = require('../controllers/panel-controller.js');
+const createController = require('../controllers/crud_controllers/create-controller.js');
+const readController = require('../controllers/crud_controllers/read-controller.js');
+const updateController = require('../controllers/crud_controllers/update-controller.js');
+const deleteController = require('../controllers/crud_controllers/delete-controller.js');
 
+// Create routes
+router.post('/account-creation', createController.storeUser);
+router.post('/product-creation', createController.storeProduct);
 
-router.get('/login', authenticationController.renderLogin);
-router.get('/register', authenticationController.renderRegister);
-router.post('/account-creation', authenticationController.storeUser);
-
-router.get('/', homeController.home);
-
-// Admin
-
-router.get('/account-management', accountController.renderUserAccountManagement);
-router.get('/account-creation', accountController.renderUserAccountCreation);
-router.get('/account-edition', accountController.renderUserAccountEdition);
-
-router.get('/product-management', productController.renderProductManagement);
-router.get('/product-creation', productController.renderProductCreation);
-router.get('/product-edition', productController.renderProductEdition);
-
-router.get('/admin', panelController.renderAdminPanel);
-router.get('/worker', panelController.renderWorkerPanel);
-
+// Read routes
+router.get('/', readController.home);
+router.get('/login', readController.login);
+router.get('/register', readController.register);
+router.get('/admin', readController.adminPanel);
+router.get('/worker', readController.workerPanel);
+router.get('/account-management', readController.accountManagement);
+router.get('/product-management', readController.productManagement);
+router.get('/account-creation', readController.accountCreation);
+router.get('/product-creation', readController.productCreation);
 
 
 module.exports = router
