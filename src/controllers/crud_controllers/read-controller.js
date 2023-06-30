@@ -9,8 +9,6 @@ function accountManagement(req, res) {
     });
 }
 
-
-
 function productManagement(req, res) {
     req.getConnection((err, connection) => {
         connection.query('SELECT * FROM products', (err, products) => {
@@ -27,7 +25,16 @@ function accountCreation(req, res) {
 }
 
 function accountEdition(req, res) {
-    res.render('admin/account-management/account-edition.hbs');
+    const id = req.params.id;
+    
+    req.getConnection((err, connection) => {
+        connection.query('SELECT * FROM users WHERE id = ?', [id], (err, users) => {
+            if(err) {
+                res.json(err);
+            }
+            res.render('admin/account-management/account-edition', { users });
+        });
+    });
 }
 
 function login(req, res) {

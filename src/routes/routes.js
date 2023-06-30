@@ -21,5 +21,15 @@ router.get('/product-management', readController.productManagement);
 router.get('/account-creation', readController.accountCreation);
 router.get('/product-creation', readController.productCreation);
 
+// Update routes
+router.get('/account-edition/:id', readController.accountEdition);
+router.post('/account-edition/:id', updateController.updateAccount);
+
+
+// Delete routes
+router.post('/delete-product', deleteController.deleteProduct);
+router.post('/delete-user', deleteController.deleteUser);
+
+
 
 module.exports = router

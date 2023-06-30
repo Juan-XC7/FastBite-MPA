@@ -18,8 +18,15 @@
                         </td>
                         <td> {{status}} </td>
                         <td>
-                            <button> Edit </button>
-                            <button> Delete </button>
+
+                            <a href="/account-edition/{{id}}">
+                                <button type="submit" class="form-accept-button w-1 cmy-1"> Edit </button>
+                            </a>
+
+                            <form action="/delete-user" method="POST">
+                                <input type="hidden" name="id" value="{{id}}">
+                                <button type="submit" class="form-accept-danger-button w-1 cmy-1"> Delete </button>
+                            </form>
                         </td>
                     </tr>
                 {{/each}}

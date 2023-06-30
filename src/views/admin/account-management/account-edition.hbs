@@ -1,3 +1,42 @@
-{{#each people}}
-    {{.}}
-{{/each}}
+<body>
+    {{#each users}}
+    <form method="POST" class="form-container align-x cmb-4">
+        <h1> Edit user </h1>
+
+        <label for="first name">First name</label>
+        <input required name="first_name" type="text" value="{{first_name}}">
+
+        <label for="last name">Last name</label>
+        <input required name="last_name" type="text" value="{{last_name}}">
+
+        <label for="Phone number">Phone number</label>
+        <input required name="phone_number" type="number" minlength="10" minlength="10" value="{{phone_number}}">
+
+
+        <label for="Role">Role</label>
+        <select required name="role" id="">
+            <option value="admin"> admin </option>
+            <option value="user"> user </option>
+            <option value="worker"> worker </option>
+        </select>
+
+        <label for="Status">Status</label>
+        <input required name="status" type="number" min="0" value="{{status}}">
+
+        <label for="email">Email</label>
+        <input required name="email" type="email" value="{{email}}">
+
+        <label for="password">Password</label>
+        <input required name="password" type="password">
+
+        <label for="passwordConfirmation">Confirm password</label>
+        <input required name="passwordConfirmation" type="password">
+
+        <p>{{loginErrors}}</p>
+
+        <button type="submit" class="form-accept-button"> Continue </button>
+        <button type="button" onclick="homeRedirect()" class="form-cancel-button"> Cancel </button>
+
+    </form>
+    {{/each}}
+</body>

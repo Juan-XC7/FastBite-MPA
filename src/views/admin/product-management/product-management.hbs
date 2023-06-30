@@ -1,12 +1,19 @@
 <body>
     <div class="flex-row">
         {{#each products}}
-            <div class="flex-column w-4 container">
-                <h3> {{product_name}} </h3>
-                <p> {{product_description}} </p>
-                <p> $ {{product_cost}} </p>
-                <button class="form-accept-button"> Edit </button>
-            </div>
+        <div class="flex-column w-4 container">
+            <h3> {{product_name}} </h3>
+            <p> {{product_description}} </p>
+            <p> $ {{product_cost}} </p>
+
+            <button class="form-accept-button w-1 cmy-1"> Edit </button>
+    
+            <form action="/delete-product" method="POST">
+                <input type="hidden" name="id" value="{{id}}">
+                <button type="submit" class="form-accept-danger-button w-1 cmy-1"> Delete </button>
+            </form>
+
+        </div>
         {{/each}}
-    </div>    
+    </div>
 </body>
