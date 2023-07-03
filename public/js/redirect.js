@@ -7,6 +7,3 @@ function homeRedirect(req, res) {
 module.exports = {
     homeRedirect,
 }
-
-
-

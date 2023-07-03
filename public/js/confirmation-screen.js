@@ -9,7 +9,6 @@ function hideConfirmation() {
 }
 
 function confirmAction() {
-    // Handle the confirmed action here
     hideConfirmation();
     alert('Confirmed!');
 }
