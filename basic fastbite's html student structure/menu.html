@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sizing.css">
+</head>
+
+<body>
+    <nav></nav>
+
+    <!-- sEARCH BAR -->
+    <input class="search-bar" placeholder="buscar"></input>
+
+    <!-- Article container -->
+    <div class="menu">
+        <div class="articulo">
+            <img src="" alt="">
+            <label for="product-name"></label>
+            <label for="product-cost"></label>
+
+            <!-- quantity modifier -->
+            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" value="0" />
+            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+
+            <button> agregar al carrito </button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
