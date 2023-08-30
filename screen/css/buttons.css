@@ -41,3 +41,21 @@ input::-webkit-inner-spin-button {
     border-style: none;
     font-weight: bold;
 }
+
+.delete-button {
+    background-color: #ff003c;
+    color: white;
+    padding: 15px;
+    border-style: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.cancel-button {
+    border-radius: 10px;
+    border: 1px solid #0088ff;
+    background-color: white;
+    color: #0088ff;
+    padding: 15px;
+    font-weight: bold;
+}

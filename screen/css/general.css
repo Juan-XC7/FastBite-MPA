@@ -4,13 +4,22 @@
 
 body {
     background-color: rgb(233, 237, 244);
-    padding: 30px;
+    padding: 10px;
 }
 
-.align-x {
+.text-center{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.align-center {
     margin-left: auto;
     margin-right: auto;
-}
+    width: 40%;
+  }
 
 .default-container {
     width: calc(100% - 60px);

@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/search-bar.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/my-shopping.css">
 </head>
-<body>
-    <nav></nav>
 
-    <div class="purchased-product">
-        <img src="" alt="">
-        <p>name</p>
-        <label for="cost"> cost </label>
+<body>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="purchased-list">
+        <div class="listed-product">
+            <img src="descarga.jpg" alt="" width="50">
+            <label for="product name" class="product-name">
+                Nombre
+            </label>
+
+            <div class="modifier-container">
+                <button class="decrease-button">-</button>
+                <input value=1 class="quantity-input" type="number" name="quantity" id="">
+                <button class="increase-button">+</button>
+            </div>
+
+            <label for="product cost">
+                $30
+            </label>
+
+            <button class="delete-button">
+                Delete
+            </button>
+        </div>
+        <div class="listed-product">
+            <img src="descarga.jpg" alt="" width="50">
+            <label for="product name" class="product-name">
+                Nombre
+            </label>
+
+            <div class="modifier-container">
+                <button class="decrease-button">-</button>
+                <input value=1 class="quantity-input" type="number" name="quantity" id="">
+                <button class="increase-button">+</button>
+            </div>
+
+            <label for="product cost">
+                $30
+            </label>
+
+            <button class="delete-button">
+                Delete
+            </button>
+        </div>
     </div>
+
+
 </body>
+
 </html>
