@@ -1,7 +1,7 @@
 .shopping-cart {
     float: left;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-direction: column;
     justify-content: space-around;
     background-color: white;
     width: calc(60% - 60px);
