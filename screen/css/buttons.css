@@ -1,0 +1,43 @@
+/* quantity modifier button */
+.modifier-container {
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.decrease-button,
+.increase-button {
+    width: 50PX;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.quantity-input {
+    width: 50PX;
+    height: 50px;
+    border-style: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+}
+
+/* normal buttons */
+
+.submit-button {
+    background-color: #0088ff;
+    color: white;
+    padding: 15px;
+    border-style: none;
+    font-weight: bold;
+}
